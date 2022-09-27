@@ -6,40 +6,39 @@ body{
   outline: 1px solid limegreen;
 }
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-
-h1 {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-h2 {
-  font-family: "Montserrat-bold";
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
-  font-weight: 900;
 }
 
 p {
   color: #8f8f8f;
 }
 
-/* Navbar */
 
+
+/* Headings */
+.big-heading {
+  font-family: "Montserrat-Bold";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+
+/* Navbar */
 .navbar {
   padding: 0 0 4.5rem;
 }
@@ -59,14 +58,28 @@ p {
   font-family: "Montserrat-light";
 }
 
-/* Download Button */
 
+
+/* Title */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+
+
+/* Download Button */
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
 
+
+/* Title Image */
 .title-img {
   width: 25%;
   transform: rotate(25deg);
@@ -74,12 +87,15 @@ p {
 }
 
 
-/* features section */
 
+/* Features Section */
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
+}
+
+.features-title {
+font-weight: 900;
 }
 
 .feature-box {
@@ -96,13 +112,18 @@ p {
   color: #ff4c68;
 }
 
-/* testimonials section */
 
+
+/* testimonials section */
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ef8172;
   color: #fff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -115,6 +136,9 @@ p {
   padding: 7% 15%;
 }
 
+
+
+/* Press Seciton */
 #press {
   background-color: #ef8172;
   text-align: center;
@@ -126,8 +150,9 @@ p {
   margin: 20px 20px 50px;
 }
 
-/* Pricing Seciton */
 
+
+/* Pricing Seciton */
 #pricing {
   padding: 100px;
 }
@@ -136,8 +161,40 @@ p {
   padding: 3% 2%;
 }
 
-/* media quaries */
+.product-name {
+  font-weight: 900;
+}
 
+.price-text {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+/* CTA Section */
+#cta {
+  background-color: #ff4c68;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* Footer Section */
+#footer {
+  text-align: center;
+
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+
+/* Media Quaries Responsive */
 @media (max-width: 990px) {
   .title-img {
     transform: rotate(0);
